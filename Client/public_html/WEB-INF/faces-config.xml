@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <managed-bean>
+    <managed-bean-name>ClientData</managed-bean-name>
+    <managed-bean-class>solap.bean.RequestResponseTest</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+      </managed-bean>
+  
+  <!-- panel logic / interface bean -->
+    <managed-bean>
+           <managed-bean-name>PanelBean</managed-bean-name>
+       <managed-bean-class>gui.PanelBean</managed-bean-class>
+       <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    <!-- main response data processing bean -->
+    <managed-bean>
+       <managed-bean-name>MainBean</managed-bean-name>
+       <managed-bean-class>solap.bean.MainBean</managed-bean-class>
+       <managed-bean-scope>session</managed-bean-scope>
+       
+    </managed-bean>
+    
+    <!-- session / user interaction and request generation bean -->
+    <managed-bean>
+       <managed-bean-name>SessionBean</managed-bean-name>
+       <managed-bean-class>solap.bean.SessionBean</managed-bean-class>
+       <managed-bean-scope>session</managed-bean-scope>
+   </managed-bean>
+    
+    <!-- session reset/load/save manager -->
+    <managed-bean>
+       <managed-bean-name>ManagerBean</managed-bean-name>
+       <managed-bean-class>solap.bean.ManagerBean</managed-bean-class>
+       <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    <managed-bean>
+       <managed-bean-name>MatrixBean</managed-bean-name>
+       <managed-bean-class>solap.bean.MatrixBean</managed-bean-class>
+       <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    <managed-bean>
+        <managed-bean-name>MapBean</managed-bean-name>
+       <managed-bean-class>solap.bean.MapBean</managed-bean-class>
+       <managed-bean-scope>request</managed-bean-scope>
+       <managed-property>
+        <property-name>x</property-name>
+        <value>#{param.x}</value>
+    </managed-property>
+
+    </managed-bean>
+    
+   <converter>
+      <converter-id>solapConverter</converter-id>
+      <converter-class>solap.bean.SOLAPConverter</converter-class>
+   </converter>
+   
+   <converter>
+      <converter-id>solapMeasureConverter</converter-id>
+      <converter-class>solap.bean.SOLAPMeasureConverter</converter-class>
+   </converter>
+</faces-config>
