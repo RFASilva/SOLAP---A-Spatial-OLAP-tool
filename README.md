@@ -8,3 +8,8 @@ The SOLAP+ is a generic system that relies on a three tier architecture composed
 Some Videos:
 
 https://dl.dropboxusercontent.com/u/736321/video1.mp4
+https://dl.dropboxusercontent.com/u/736321/video2.mp4
+https://dl.dropboxusercontent.com/u/736321/video3.mp4
+https://dl.dropboxusercontent.com/u/736321/video4.mp4
+https://dl.dropboxusercontent.com/u/736321/video5.mp4
+https://dl.dropboxusercontent.com/u/736321/video6.mp4
